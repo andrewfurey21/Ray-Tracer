@@ -1,0 +1,9 @@
+Ray-Tracer.vcxproj
+Ray-Tracer.vcxproj.filters
+Ray-Tracer.vcxproj.user
+
+.vs/
+Debug/
+/Debug
+
+*.sln
