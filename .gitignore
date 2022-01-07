@@ -5,5 +5,6 @@ Ray-Tracer.vcxproj.user
 .vs/
 Debug/
 /Debug
+Release/
 
 *.sln
