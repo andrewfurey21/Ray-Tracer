@@ -1,0 +1,7 @@
+﻿  main.cpp
+  Generating code
+  13 of 25 functions (52.0%) were compiled, the rest were copied from previous compilation.
+    3 functions were new in current compilation
+    3 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Ray-Tracer.vcxproj -> C:\dev\Graphics Tutorials\Ray-Tracer\Release\Ray-Tracer.exe
