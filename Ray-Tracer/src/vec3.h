@@ -10,7 +10,7 @@ class vec3 {
 public:
 	double x, y, z;
 	vec3() : x(0), y(0), z(0) {}
-	vec3(double y, double x, double z) : x(x), y(y), z(z) {}
+	vec3(double x, double y, double z) : x(x), y(y), z(z) {}
 	void print() { printf("y: %f, y: %f, z: %f\n", x, y, z); }
 
 	vec3 operator-() const {
@@ -60,11 +60,9 @@ public:
 using point = vec3;
 using color = vec3;
 
-inline std::ostream& operator<<(std::ostream& out, vec3& vector) {
+inline std::ostream& operator<<(std::ostream& out, const vec3& vector) {
 	return out << vector.x << " " << vector.y << " " << vector.z << "\n";
 }
-
-
 
 inline double dot(const vec3& u, const vec3& v) {
 	return u.x * v.x
@@ -102,8 +100,8 @@ inline vec3 operator/(vec3 v, double t) {
 	return (1 / t) * v;
 }
 
-inline vec3 normal(vec3 vector) {
-	return vector / vector.magnitude();
+inline vec3 normalize(vec3 vector) {
+	return (vector / vector.magnitude());
 }
 
 
