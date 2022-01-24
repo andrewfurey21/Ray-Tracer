@@ -4,6 +4,7 @@
 #include "vec3.h"
 
 class Sphere : public Hittable {
+public:
 	Sphere() {}
 	Sphere(point center, double radius) : center(center), radius(radius) {}
 
@@ -43,8 +44,6 @@ bool Sphere::hit(const Ray& r, double tMin, double tMax, hitRecord& rec) const {
     
     vec3 outwardNormal = (rec.p - center) / radius;
     rec.setFaceNormal(r, outwardNormal);
-
-   
 
     return true;
 }

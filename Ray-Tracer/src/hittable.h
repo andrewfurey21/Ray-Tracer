@@ -9,6 +9,7 @@ struct hitRecord {
 
 	bool frontFace;
 
+	//sign of dot product tells us whether the ray is facing away or not from normal
 	inline void setFaceNormal(const Ray& r, const vec3& outwardNormal) {
 		frontFace = dot(r.direction(), outwardNormal) < 0;
 		normal = frontFace ? outwardNormal : -outwardNormal;
